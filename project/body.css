@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(lights-1867437_640.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar
+{
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+    background: cornflowerblue;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.header
+{
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.header h1{
+    font-size: 75px;
+    margin-top: 80px;
+    
+}
+.header p{
+    margin: 20px auto;
+    line-height: 25px;
+    font-weight: 100;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid cornflowerblue;
+    background: transparent;
+    color:#fff;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+span{
+    width:0;
+    height: 100%;
+    background: rgb(64, 73, 73);
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
