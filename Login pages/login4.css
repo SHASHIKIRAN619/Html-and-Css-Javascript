@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(pexels-photo-1090638.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+}
+.center{
+    width: 420px;
+    background:transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    box-shadow: rgb(0, 0, 0, .2);
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 10px;
+    padding: 20px 0;
+    color: brown;
+}
+.center form{
+    padding: 0 40px;
+}
+form .txt-field{
+    position: relative;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid burlywood;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+ 
+}
+.txt-field i{
+    position: absolute;
+    right:20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: brown;
+}
+.pass{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+    margin: 15px 0;
+    height: 40px;
+    border: 1px solid burlywood;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reg{
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.reg a{
+    text-decoration: none;
+}
+button:hover{
+    border: 1px solid black;
+    background: transparent;
+    color:brown;
+    backdrop-filter: blur(20px);
+    box-shadow: rgb(0, 0, 0, .2);
+}
+input::placeholder{
+    font-size: 16px;
+    color: brown;
+}
+.pass a{
+    text-decoration: none;
+    color: black;
+}
+.pass a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.reg a:hover{
+    text-decoration: underline;
+}
