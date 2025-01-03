@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color:black;
+}
+.center{
+    width: 400px;
+    height: 550px;
+    background:black;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.center h1{
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+.center form{
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form .txt-field{
+    position: relative;
+    margin: 30px 0;
+}.txt-field input{
+    width: 320px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    color: black;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    box-shadow: 0 0 10px darkcyan;
+}
+.log,p{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.txt-field input:focus{
+    box-shadow: 0 0 15px darkcyan;
+}
+.txt-field input::placeholder{
+    color: black;
+    font-size: 16px;
+}
