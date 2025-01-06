@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url(background\(1\).jpeg);
+   background-position: center;
+   background-size: contain;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 35px; 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.center1{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   background:transparent;
+   backdrop-filter: blur(0px);
+   box-shadow:rgb(0,0,0,.2);
+   width: 420px;
+   height: 430px;
+   margin-top: 50px;
+   
+}
+.center1 h1{
+    text-align: center; 
+    margin:10px 0 30px 20px ;
+    color: white;
+}
+.center1 form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form .txt-field{
+   margin: 40px 0;
+   position: relative;
+   border-bottom: 1px solid white;
+   color: white;
+}
+.txt-field input{
+    width: 320px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: white;
+}
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.txt-field input:focus~label,
+.txt-field input:valid~label{
+    top:-5px;
+}
+.rem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -5px 0 20px 10px;
+    color: white;
+}
+.rem a{
+    text-decoration:none;
+    color: white;
+}
+.rem a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    box-shadow: 0 0 20px skyblue;
+    color: white;
+}
+.sign-up
+{
+    margin: 30px 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.sign-up a{
+    text-decoration: none;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+}
