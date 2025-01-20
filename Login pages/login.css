@@ -1,72 +1,118 @@
-body{
+*{
     padding: 0;
     margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(120deg,#ADD8E6,#2D383C);
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
     height: 100vh;
-    overflow: hidden;
+
 }
 .center{
+    width: 420px;
+    height: 70vb;
+    background:url(/img/logo1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: white;
-    width: 400px;
-    border: 1px solid black;
-    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(80px);
 }
-.center h1{
+.header{
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid blue;
+    color:white;
+    padding-top: 5px;
 }
 .center form{
-    padding: 0 20px;
-    box-sizing: border-box;
+    padding: 0 30px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 form .txt-field{
-    position: relative;
+    position:relative;
     margin: 30px 0;
 }
-.txt-field label{
-    padding: 0 10px;
-    font-size: 20px;
-}
 .txt-field input{
-    width: 100%;
-    padding: 10px 0;
+    width:350px;
+    height: 45px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border:1px solid silver;
+    outline: none;
+    background: transparent;
+    border-radius: 18px;
+    color: white;
+}
+.txt-field input:focus:hover{
     border: 1px solid black;
-    border-radius: 12px;
+    box-shadow: 0 0 10px white;
+}
+.txt-field input[type='text']:focus + label{
+    position: absolute;
+    top: -10px;
+    background-color:none;
+    left: 10px;
+    color: silver;
+}
+.txt-field input[type='password']:focus +label{
+    position: absolute;
+    top: -10px;
+    background:none;
+    left: 10px;
+    color: silver;
+}
+.txt-field input[type='text']:not(:focus) + label,
+.txt-field input[type='password']:not(:focus) + label{
+ display: none;
+}
+.txt-field input::placeholder{
+    font-size: 12px;
 }
 .pass{
-    margin: -5px 0 20px 5px;
+    margin: -5px 10px 30px 20px;
+}
+button{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+    border: 1px solid silver;
+    background: transparent;
+    border-radius: 25px;
+}
+button:focus:hover{
+    border: 1px solid black;
+    box-shadow: 0 0 10px white;
 }
 .pass a{
     text-decoration: none;
     color: black;
 }
+.signup{
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 18px;
+}
+.signup a{
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
 .pass a:hover{
     text-decoration: underline;
     color: blue;
-}
-input[type=submit]
-{
-    width: 100%;
-    height: 50px;
-    font-weight: bold;
-    font-size: 20px;
-    border: solid 1px blue;
-    border-radius: 15px;
-}
-.sign-up{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 18px;
-}
-.sign-up a{
-    text-decoration: none;
-}
-.sign-up a:hover{
-    text-decoration: underline;
+    
 }
