@@ -1,118 +1,83 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-}
-body{
-    background-color: black;
-    height: 100vh;
-
+    box-sizing: border-box;
 }
 .center{
-    width: 420px;
-    height: 70vb;
-    background:url(/img/logo1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    border: 1px solid black;
-    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 420px;
     transform: translate(-50%,-50%);
-    box-shadow: 0 0 10px white;
-    backdrop-filter: blur(80px);
+    background-color:skyblue;
+    border-radius: 10px;
+    border: 1px solid black;
 }
-.header{
+.center h1{
+    padding: 10px 20px 30px;
     text-align: center;
-    color:white;
-    padding-top: 5px;
 }
 .center form{
-    padding: 0 30px;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    
 }
 form .txt-field{
-    position:relative;
-    margin: 30px 0;
+     margin:30px 0 ;
+     border-bottom: 1PX SOLID black;
+     position: relative;
 }
 .txt-field input{
-    width:350px;
-    height: 45px;
-    padding: 5px;
-    font-size: 18px;
-    font-family: sans-serif;
-    border:1px solid silver;
+    width:100%;
+    height: 40px;
+    background: none;
+    border: none;
     outline: none;
-    background: transparent;
-    border-radius: 18px;
-    color: white;
+    padding-top: 1rem;
+    padding-left: 0.2rem;
+    font-size: 1.0rem;
+    font-weight: bold;
 }
-.txt-field input:focus:hover{
-    border: 1px solid black;
-    box-shadow: 0 0 10px white;
-}
-.txt-field input[type='text']:focus + label{
+.txt-field label{
     position: absolute;
-    top: -10px;
-    background-color:none;
-    left: 10px;
-    color: silver;
-}
-.txt-field input[type='password']:focus +label{
-    position: absolute;
-    top: -10px;
-    background:none;
-    left: 10px;
-    color: silver;
-}
-.txt-field input[type='text']:not(:focus) + label,
-.txt-field input[type='password']:not(:focus) + label{
- display: none;
-}
-.txt-field input::placeholder{
-    font-size: 12px;
+    left:0%;
+    top: -25%;
+    padding: 0 2px;
+    font-size: 18px;
+    font-style: italic;
+    color: whitesmoke;
 }
 .pass{
-    margin: -5px 10px 30px 20px;
-}
-button{
-    width: 100%;
-    height: 45px;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color:white;
-    border: 1px solid silver;
-    background: transparent;
-    border-radius: 25px;
-}
-button:focus:hover{
-    border: 1px solid black;
-    box-shadow: 0 0 10px white;
+    margin: 10px 0 25px;
 }
 .pass a{
     text-decoration: none;
-    color: black;
-}
-.signup{
-    text-align: center;
-    margin: 20px 10px;
-    font-size: 18px;
-}
-.signup a{
-    text-decoration: none;
-}
-.signup a:hover{
-    text-decoration: underline;
+    color: whitesmoke;
 }
 .pass a:hover{
     text-decoration: underline;
     color: blue;
-    
+}
+.sign-up{
+    margin: 15px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.sign-up a{
+    text-decoration: none;
+    color: black;
+}
+.sign-up a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+button{
+    margin: 8px 10px;
+    width: 18rem;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+   
 }
