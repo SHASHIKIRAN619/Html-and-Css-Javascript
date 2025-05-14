@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="mod.css">
+</head>
+<body>
+  <div class="center">
+    <div class="form-header">
+      <div class="titles">
+        <div class="log-title">Login</div>
+        <div class="reg-title">Register</div>
+      </div>
+    </div>
+    <!--Login form-->
+    <form action="#" class="login-form" autocomplete="off">
+      <div class="input-box">
+        <input type="email" class="input-field" required id="log-email">
+        <label for="log-email" class="label">Email</label>
+      </div>
+      <div class="input-box">
+        <input type="password" class="input-field" id="log-pass" required>
+        <label for="log-pass" class="label">Password</label>
+      </div>
+      <div class="form-cols">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="input-button">
+        <button class="btn" id="signinbtn">Login</button>
+      </div>
+      <div class="input-sign">
+        <p>Don't have an Account? <a href="#" onclick="registerfunction()">Register</a></p>
+      </div>
+    </form>
+    <!--Register Form-->
+    <form action="#" class="register-form" autocomplete="off">
+      <div class="input-box">
+        <input type="text" class="input-field" required id="reg-name">
+        <label for="reg-name" class="label">UserName</label>
+      </div>
+      <div class="input-box">
+        <input type="email" class="input-field" required id="reg-email">
+        <label for="reg-email" class="label">Email</label>
+      </div>
+      <div class="input-box">
+        <input type="password" class="input-field" id="reg-pass" required>
+        <label for="reg-pass" class="label">Password</label>
+      </div>
+      <div class="form-cols">
+        <div class="col-1">
+          <input type="checkbox" id="check1">
+          <label for="check1">I agree to these <a href="#">Terms & Conditions</a></label>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="input-button">
+        <button class="btn" id="signinbtn">Sign In</button>
+      </div>
+      <div class="input-sign">
+        <p>Already have an Account? <a href="#" onclick="loginfunction()">Login</a></p>
+      </div>
+    </form>
+  </div>
+  <script src="mod.js"></script>
+</body>
+</html>
